@@ -8,13 +8,6 @@ local function smart_run()
   local commands = {
     c = string.format("gcc %s -o %s && %s", s_file, s_out, s_out),
     cpp = string.format("g++ %s -o %s && %s", s_file, s_out, s_out),
-    python = "python3 " .. s_file,
-    javascript = "node " .. s_file,
-    typescript = "ts-node " .. s_file,
-    lua = "lua " .. s_file,
-    sh = "bash " .. s_file,
-    go = "go run " .. s_file,
-    rust = "cargo run",
   }
   if commands[filetype] then
     vim.cmd("split | term " .. commands[filetype])
