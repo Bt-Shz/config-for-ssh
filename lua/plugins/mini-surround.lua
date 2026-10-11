@@ -10,6 +10,6 @@ return {
       replace = "gsr",
       update_n_lines = "gsn",
     },
-    custom_surroundings = { ["["] = { output = { left = "[", right = "]" } }, b = { output = { left = "**", right = "**" } } },
+    custom_surroundings = { ["["] = { output = { left = "[", right = "]" } } },
   },
 }
