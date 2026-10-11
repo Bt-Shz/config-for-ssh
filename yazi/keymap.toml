@@ -1,0 +1,14 @@
+#:schema https://yazi-rs.github.io/schemas/keymap.json
+
+[mgr]
+prepend_keymap = [
+	# Keep deletion recoverable: d uses Yazi's built-in Trash support.
+	{ on = "D", run = "noop" },
+	{ on = "<C-Enter>", run = 'shell "$SHELL" --block', desc = "Open $SHELL here", for = "unix" },
+	{ on = "e", run = "cd --interactive", desc = "Jump interactively" },
+]
+
+[input]
+prepend_keymap = [
+	{ on = "<Esc>", run = "close", desc = "Cancel input" },
+]

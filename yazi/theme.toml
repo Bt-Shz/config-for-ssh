@@ -1,0 +1,35 @@
+# Override the default dark/light theme accent.
+
+[tabs]
+active   = { bg = "#7aa2f7", bold = true }
+inactive = { fg = "#7aa2f7", bg = "gray" }
+
+[mgr]
+cwd = { fg = "#7aa2f7" }
+
+[mode]
+normal_main = { bg = "#7aa2f7", bold = true }
+normal_alt  = { fg = "#7aa2f7", bg = "gray" }
+
+[indicator]
+parent  = { bg = "#7aa2f7", fg = "black", bold = true }
+current = { bg = "#7aa2f7", fg = "black", bold = true }
+preview = { underline = true }
+
+[confirm]
+border = { fg = "#7aa2f7" }
+title  = { fg = "#7aa2f7" }
+
+[spot]
+border = { fg = "#7aa2f7" }
+title  = { fg = "#7aa2f7" }
+tbl_col = { fg = "#7aa2f7" }
+
+[pick]
+border = { fg = "#7aa2f7" }
+
+[input]
+border = { fg = "#7aa2f7" }
+
+[cmp]
+border = { fg = "#7aa2f7" }
